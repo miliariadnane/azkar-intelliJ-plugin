@@ -3,11 +3,22 @@ plugins {
     id("org.jetbrains.intellij") version "1.5.2"
 }
 
-group = "dev.nano"
+group = "dev.nano.azkar.intelliJ.plugin"
 version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+}
+
+dependencies {
+    implementation ("com.google.code.gson:gson:2.10")
+    implementation ("commons-io:commons-io:2.11.0")
+
+    compileOnly("org.projectlombok:lombok:1.18.24")
+    annotationProcessor("org.projectlombok:lombok:1.18.24")
+
+    testImplementation("org.projectlombok:lombok:1.18.24")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.24")
 }
 
 // Configure Gradle IntelliJ Plugin

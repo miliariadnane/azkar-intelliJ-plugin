@@ -5,17 +5,16 @@
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Azkar-intellij-plugin</name>
+    <name>Azkar</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
+    <vendor email="miliari.adnane@gmail.com" url="https://github.com/miliariadnane">Adnane Miliari</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    <p>Get Azkar and Dua reminders during your coding sessions and stay connected with Allah BY ZIKR.</p>
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -26,5 +25,8 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
 
+        <postStartupActivity implementation="dev.nano.azkar.intelliJ.plugin.AzkarStartupActivity"/>
+
+        <notificationGroup displayType="BALLOON" id="dev.nano.azkar.intelliJ.plugin.notificationGroup"/>
     </extensions>
 </idea-plugin>
