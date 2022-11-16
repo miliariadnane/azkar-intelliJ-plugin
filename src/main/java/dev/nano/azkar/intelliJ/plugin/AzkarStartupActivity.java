@@ -30,7 +30,7 @@ public class AzkarStartupActivity implements StartupActivity {
         try {
             List<Zikr> zikrList = ReadData.getAzkarFromJson();
             NotificationGroupManager.getInstance()
-                    .getNotificationGroup("dev.nano.azkar.intelliJ.plugin.notificationGroup")
+                    .getNotificationGroup("Basmalah On start")
                     // get first zikr from json files
                     .createNotification(
                             zikrList.get(0).getZikr(),

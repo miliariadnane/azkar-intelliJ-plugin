@@ -27,6 +27,11 @@
 
         <postStartupActivity implementation="dev.nano.azkar.intelliJ.plugin.AzkarStartupActivity"/>
 
-        <notificationGroup displayType="BALLOON" id="dev.nano.azkar.intelliJ.plugin.notificationGroup"/>
+        <applicationConfigurable parentId="Other Settings"
+                                 instance="dev.nano.azkar.intelliJ.plugin.settings.AzkarConfigurableSettings"
+                                 id="dev.nano.azkar.intelliJ.plugin.settings.AzkarConfigurableSettings"
+                                 displayName="Azkar Plugin Settings" />
+
+        <notificationGroup displayType="BALLOON" id="Basmalah On start"/>
     </extensions>
 </idea-plugin>

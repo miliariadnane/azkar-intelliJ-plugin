@@ -13,6 +13,7 @@ repositories {
 dependencies {
     implementation ("com.google.code.gson:gson:2.10")
     implementation ("commons-io:commons-io:2.11.0")
+    implementation ("com.miglayout:miglayout-swing:11.0")
 
     compileOnly("org.projectlombok:lombok:1.18.24")
     annotationProcessor("org.projectlombok:lombok:1.18.24")
